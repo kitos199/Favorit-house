@@ -1,0 +1,185 @@
+:root {
+  --font-biriani: 'Biryani';
+  --font-lora: 'Lora';
+  --color-bg: #f4f4f4;
+  --color-bg-popular-sketch: #ffffff;
+  --color-secondary: #fbda94;
+  --border-radius: 8px;
+  --color-text: ##0a0a0a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+html {
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+  --text-rendering: optimizeLegibility;
+}
+
+.popular-project {
+  max-width: 1920px;
+  margin: 150px 0 90px 100px;
+}
+
+.wrapper {
+  max-width: 1820px;
+  display: flex;
+  background-color: var(--color-bg-popular-sketch);
+}
+
+/* Опитсание */
+.table-content {
+  background-color: var(--color-bg);
+  height: 822px;
+  max-width: 415px;
+}
+
+.table-content__h3 {
+  font: 600 24px 'Biryani';
+  color: #0a0a0a;
+  margin-bottom: 18px;
+}
+.table-content__h3--color {
+  color: #a37e30;
+}
+.table-content__text {
+  font: 500 20px var(--font-lora);
+}
+/* Карточка проекта */
+.wrapper__project-sketch {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--color-bg-popular-sketch);
+  gap:20px;
+  overflow-x:auto;
+  margin: 60px 0 0 60px;
+}
+.project-sketch {
+  display: grid;
+  max-width: 560px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 46px;
+  align-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-popular-sketch);
+  row-gap: 10px;
+}
+
+.project-sketch__img {
+  min-width: 560px;
+  grid-column: span 2;
+  max-height: 350px;
+  margin-bottom: 20px;
+}
+
+.project-sketch__h3 {
+  font-family: var(--font-lora);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.project-sketch__item {
+  font-family: var(--font-biriani);
+  font-weight: 400;
+  size: 16px;
+  color: #0a0a0a99;
+}
+.project-sketch__item--pad {
+  padding-left: 20px;
+}
+
+.project-sketch__item--position {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-sketch__btm {
+  font-family: var(--font-biriani);
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 600;
+  grid-column: span 2;
+  height: 60px;
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.project-sketch__btm::after {
+  color: var(--color-text);
+  content: url(../img/Arrow.png);
+  position: relative;
+  top: 3px;
+  left: 7px;
+}
+
+.project-sketch__sum {
+  font-family: var(--font-lora);
+  font-weight: 600;
+  font-size: 20px;
+  border: 3px solid var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 16px 24px;
+  text-align: center;
+  justify-self: end;
+}
+
+.project-sketch__sup {
+  font-size: 0.7em;
+  vertical-align: super;
+  position: relative;
+  top: 1px;
+}
+
+.btn__switch {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  border: none;
+}
+
+.btn__switch--left {
+  margin-left: 60px;
+}
+.btn__switch--right {
+  margin-left: 16px;
+}
+
+.popular-project__switch{
+  display: flex;
+  margin-left: auto;
+  flex-wrap: wrap;
+  /* flex-basis: 100%; */
+}
+
+/* Это для грида
+.wrapper__project-sketch {
+  display: grid;
+  background-color: var(--color-bg-popular-sketch);
+  grid-template-columns: repeat(3,560px);
+  gap:20px;
+  margin: 60px 0 0 60px;
+  overflow-x:auto;
+}
+.project-sketch {
+  display: grid;
+  max-height: 592px;
+  min-height: 592px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 46px;
+  align-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-popular-sketch);
+  max-width: 560px;
+} */

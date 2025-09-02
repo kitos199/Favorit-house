@@ -1,12 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/popular-project.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/popular-project.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Rosario:ital,wght@0,300..700;1,300..700&display=swap&quot"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <section class="popular-project">
+      <div class="wrapper">
+        <!-- Описание -->
+        <div class="table-content">
+          <h3 class="table-content__h3">
+            ПОПУЛЯРНЫЕ <span class="table-content__h3--color">ПРОЕКТЫ</span>
+          </h3>
+          <p class="table-content__text">
+            Мы работаем с соблюдением всех российских норм и стандартов
+            строительства и используем уникальные технологии, позволяющие нашим
+            домам служить нескольким поколениям.
+          </p>
+        </div>
+        <!-- Карточки с проектами -->
+        <div class="wrapper__project-sketch">
+          <!-- Проект 1 -->
+          <div class="project-sketch project-sketch--1">
+            <img
+              class="project-sketch__img"
+              src="../img/house-blue-popular-project.png"
+              alt="Проект дома №1"
+            />
+            <div class="project-sketch__one">
+              <h3 class="project-sketch__h3">ПРОЕКТ 1</h3>
+              <p class="project-sketch__item">Каркасный дом 10,0х11 м</p>
+            </div>
+
+            <p class="project-sketch__sum">5 890 000 ₽</p>
+            <p class="project-sketch__item">
+              Площадь:
+              <span class="project-sketch__item--pad"
+                >190 м<sup class="project-sketch__sup">2</sup></span
+              >
+            </p>
+            <p class="project-sketch__item project-sketch__item--position">
+              Площадь
+              <span
+                >застройки:120 м<sup class="project-sketch__sup">2</sup></span
+              >
+            </p>
+            <p class="project-sketch__item">
+              Размр: <span class="project-sketch__item--pad">10,0х11 м</span>
+            </p>
+            <p class="project-sketch__item project-sketch__item--position">
+              Этажность: <span>Два</span>
+            </p>
+            <button class="project-sketch__btm">ПОДРОБНЕЕ</button>
+          </div>
+          <!-- Проект 2 -->
+          <div class="project-sketch project-sketch--2">
+            <img
+              class="project-sketch__img"
+              src="../img/house-brown-popular-project.png"
+              alt="Проект дома №2"
+            />
+            <div class="project-sketch__one">
+              <h3 class="project-sketch__h3">ПРОЕКТ 2</h3>
+              <p class="project-sketch__item">Каркасный дом 10,0х11 м</p>
+            </div>
+
+            <p class="project-sketch__sum">4 400 000 ₽</p>
+            <p class="project-sketch__item">
+              Площадь:
+              <span class="project-sketch__item--pad"
+                >190 м<sup class="project-sketch__sup">2</sup></span
+              >
+            </p>
+            <p class="project-sketch__item project-sketch__item--position">
+              Площадь
+              <span
+                >застройки:100 м<sup class="project-sketch__sup">2</sup></span
+              >
+            </p>
+            <p class="project-sketch__item">
+              Размр: <span class="project-sketch__item--pad">10,0х11 м</span>
+            </p>
+            <p class="project-sketch__item project-sketch__item--position">
+              Этажность: <span>Один</span>
+            </p>
+            <button class="project-sketch__btm">ПОДРОБНЕЕ</button>
+          </div>
+          <!-- Проект 3 -->
+          <div class="project-sketch project-sketch--3">
+            <img
+              class="project-sketch__img"
+              src="../img/roof-popular-project.png"
+              alt="Проект дома №3"
+            />
+            <div class="project-sketch__one">
+              <h3 class="project-sketch__h3">ПРОЕКТ 3</h3>
+              <p class="project-sketch__item">Каркасный дом 10,0х11 м</p>
+            </div>
+
+            <p class="project-sketch__sum">5 890 000 ₽</p>
+            <p class="project-sketch__item">
+              Площадь:
+              <span class="project-sketch__item--pad"
+                >190 м<sup class="project-sketch__sup">2</sup></span
+              >
+            </p>
+            <p class="project-sketch__item project-sketch__item--position">
+              Площадь
+              <span
+                >застройки:120 м<sup class="project-sketch__sup">2</sup></span
+              >
+            </p>
+            <p class="project-sketch__item">
+              Размр: <span class="project-sketch__item--pad">10,0х11 м</span>
+            </p>
+            <p class="project-sketch__item project-sketch__item--position">
+              Этажность: <span>Два</span>
+            </p>
+            <button class="project-sketch__btm">ПОДРОБНЕЕ</button>
+          </div>
+          <!-- кнопки переключения -->
+        </div>
+        <div class="popular-project__switch">
+          <button class="btn__switch btn__switch--left">
+            <img src="../img/arrow-left.png" alt="Перелсьнуть влево" />
+          </button>
+          <button class="btn__switch btn__switch--right">
+            <img src="../img/arrow-right.png" alt="Перелестнуть вправо" />
+          </button>
+        </div>
+      </div>
+    </section>
     <script src="/script/popular-project.js"></script>
-</body>
+  </body>
 </html>
