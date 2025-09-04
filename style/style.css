@@ -1,0 +1,24 @@
+:root {
+  --font-biriani: 'Biryani';
+  --font-lora: 'Lora';
+  --color-bg: #f4f4f4;
+  --color-bg-popular-sketch: #ffffff;
+  --color-secondary: #fbda94;
+  --border-radius: 8px;
+  --color-text: ##0a0a0a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+html {
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+  --text-rendering: optimizeLegibility;
+}
