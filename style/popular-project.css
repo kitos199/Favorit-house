@@ -210,7 +210,7 @@ html {
   animation: slideIn 0.7s ease forwards;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 430px) {
   .popular-project {
     max-width: 360px;
     margin: 19px;
@@ -221,7 +221,7 @@ html {
   .wrapper {
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    max-height: 100%;
     justify-items: flex-start;
     max-width: 360px;
     margin: 0;
@@ -252,7 +252,7 @@ html {
   .project-sketch__img {
     max-width: 280px;
     min-width: 100px;
-    height: 170px;
+    min-height: 170px;
     grid-column: 1;
   }
   .project-sketch__img:nth-child(n) {
@@ -281,5 +281,10 @@ html {
     justify-self: flex-end;
     top: -100px;
     left: -20px;
+    align-items: center;
   }
+}
+
+@media (max-width: 900px){
+  
 }
