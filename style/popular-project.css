@@ -210,6 +210,36 @@ html {
   animation: slideIn 0.7s ease forwards;
 }
 
+@media (max-width: 900px) {
+  .popular-project {
+    width: 100%;
+    margin: 19px;
+    max-width: 900px;
+  }
+  .table-content {
+    max-width: 900px;
+    text-align: center;
+    max-height: 163px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrapper__project-sketch {
+    overflow: auto;
+  }
+  .container__project-sketch {
+    margin: 10px;
+  }
+  .popular-project__container-footer {
+    margin: -3px;
+    padding: 30px;
+    top: 3px;
+  }
+}
+
+/* Ширина 430px */
 @media (max-width: 430px) {
   .popular-project {
     max-width: 360px;
@@ -217,6 +247,7 @@ html {
   }
   .table-content {
     max-height: 168px;
+    text-align: start;
   }
   .wrapper {
     display: flex;
@@ -235,7 +266,7 @@ html {
   }
 
   .wrapper__project-sketch {
-    overflow: scroll;
+    overflow: auto;
   }
   .container__project-sketch {
     max-width: 299px;
@@ -282,9 +313,6 @@ html {
     top: -100px;
     left: -20px;
     align-items: center;
+    padding: 0;
   }
-}
-
-@media (max-width: 900px){
-  
 }
