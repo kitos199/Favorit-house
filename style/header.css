@@ -13,6 +13,7 @@ list-style: none;
     background-image: url('/c:/Users/user/Desktop/headerbg.png');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .container {
@@ -70,7 +71,15 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 text-transform: uppercase;
+cursor: pointer;
 }
+
+.nav__item:hover,
+.nav__item:active {
+    color: #AB8A44;
+}
+
+
 
 .nav__item:first-child {
     margin-left: 99px;
@@ -263,8 +272,7 @@ border-radius: 8px;
 border: none;
 background: #FBDA94;
 box-shadow: 5px 10px 20px 0 rgba(251, 218, 148, 0.25);
-
-
+cursor: pointer;
 }
 
 .hero__button-text {
